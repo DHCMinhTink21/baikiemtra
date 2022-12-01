@@ -1,0 +1,153 @@
+<html>
+    <head>
+			<title>Kiemtra</title>
+			<style>
+			.namgiua{
+			   width: 1000;
+			   margin-left:auto;
+			   margin-right:auto;
+			   }
+			   .menu{
+  background: #121212;
+  
+}
+.menu ul {
+   list-style:none;
+   padding:0 15px;
+   
+}
+.menu ul li{
+  position: relative;
+}
+
+.menu ul li a{
+   color: #EDEDED;
+   text-decoration:none;
+}
+.menu > ul > li {
+   display: inline-block;
+
+}
+.menu > ul > li > a{
+    display: block;
+	line-height:40px;
+	padding: 0 15px;
+}
+
+.menu ul ul {
+      width:220px;
+	  position: absolute;
+	  visibility: hidden;
+}
+.menu ul ul li {
+line-height: 40px;
+background: red;
+padding: 0 15px;
+left: -15px;
+}
+.menu ul ul li:hover{
+    background: #121212;
+}
+.menu ul li:hover > ul{
+  visibility: visible;
+  top: 100%;
+  }
+ .menu ul ul ul{
+ top: 0 !important;
+ left: 100%;
+ 
+ }
+ .mm{
+     width: 1000px;
+	 height: 300px;
+	 overflow: hidden;
+	 margin: 0 auto;
+   }
+   .duongvien{
+     width: 3000px;
+	 -webkit-animation: slide 8s ease infinite;
+   }
+   .slide{
+       float:left;
+	   height: 300px;
+	   width: 1000px;
+	   display: flex;
+   
+   }
+   @-webkit-keyframes slide{
+      25% {margin-left: 0px;}
+	    50% {margin-left: -1000px;}
+	    75% {margin-left: -2000px;}
+   }
+			   
+			</style>
+	</head>
+<body>
+   <FORM name="ngoaite" methoa="POST">
+    <table border=1 class="namgiua">
+	  <tr align="center" >
+	          <td colspan=2 height="20">  <img src="h1.jpg"  height= "250"> </td>
+	  </tr>
+	  
+	  <tr align="center" >
+	        <td  colspan=2 height="30"> <div class="menu">
+	    <ul>
+		   <li><a href="#"><h3>Menu gồm: </h3></a> </li>
+		   <li><a href="#"><h3>Trang chủ </h3></a> </li>
+		   <li><a href="#"><h3>Laptop </h3></a> </li>
+ 
+		   <li><a href="#"><h3>Phụ kiện </h3></a> </li>
+		   <li><a href="#"><h3>Điện thoại</h3> </a>
+                   <UL>
+			   <li><a href="#">Apple </a> </li>
+			   <li><a href="#">Samsung</a> 
+			         <ul>
+						<li><a href="#">S21 5G</a> </li>
+						<li><a href="#">Z Flip3</a> </li>
+						<li><a href="#">Galaxy </a> </li>
+					</li></ul>
+			   <li><a href="#">Vivo </a> </li>
+			   </UL>
+           </li>
+
+		</ul>
+		</div>
+
+
+			</td>     
+	  </tr>
+       
+	  <tr> <td colspan=2 > 
+						  <div class="mm">
+					  <div class="duongvien">
+						  <div class="slide" ><img src="h2.jpg" width="1000"></div>
+						 <div class="slide" ><img src="h3.jpg" width="1000"></div>
+						 <div class="slide" ><img src="h4.jpg" width="1000"></div>
+						
+					</div>
+					</div>
+  	  </td> 
+	  </tr>
+	  
+	  <tr> <td rowspan=2 width="700"><p> <h2> ĐĂNG KÝ MUA IPHONE 14 </h2></p>
+              <p align="left">
+				Họ tên: <input type="text" name="hoten"><BR><br>
+				Số CCCD: <input type="number" name="CCCD"><br><br>
+				Loại: <input type="radio" name="loai" checked> 256 GB 
+				      <input type="radio" name="loai" > 512 GB <br><br><br>
+			    Lựa chọn: <input type="checkbox" name="LC" > Giao hàng 
+				          <input type="checkbox" name="LC" > Phụ kiện 
+				          <input type="checkbox" name="LC" > Hóa đơn <br><br>
+				<input type="button" value="Đặt hàng">
+             </p>
+
+	  </td>
+	       <td width="500" align="center">   <img src="h5.jpeg" width="300" height= "200" >    </td>
+	 </tr>
+	 <tr> <td align="center">  <img src="h6.jpg" width="300" height= "200">      </td>
+	 </tr>
+	 
+
+</form>
+</body>
+</html>
